@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: markdownnotedb
+    environment:
+      POSTGRES_DB: markdownnotedb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
